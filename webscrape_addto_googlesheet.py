@@ -43,21 +43,12 @@ def main():
 
     spreadsheet_id = spreadsheet.get('spreadsheetId')
 
-    range_name = 'Sheet1!A1:B100'
-    body_old = {
-        "majorDimension": "ROWS",
-        "values": [
-            ["Item", "Cost", "Stocked", "Ship Date"],
-            ["Wheel", "$20.50", "4", "3/1/2016"],  # new row
-            ["Door", "$15", "2", "3/15/2016"],
-            ["Engine", "$100", "1", "30/20/2016"],
-            ["Totals", "=SUM(B2:B4)", "=SUM(C2:C4)", "=MAX(D2:D4)"]
-        ],
-    }
+    range_name = 'mention_range'
+
     body = {
         "majorDimension": "ROWS",
         "values": [
-            ["title", "link"]],
+            mention titles in a list],
            }
 
     URL = 'url_to_connect'
